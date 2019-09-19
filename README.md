@@ -18,12 +18,9 @@ Swift protocol extension for automatically adjusting view offset when keyboard a
 
 There is no any pod installation required!
 
-How to use it:
-Drag MoveViewwithKeyboard file to you XCode project
-In your ViewDidLoad method add "self.setKeyboardMover()"
-
 ## Example usage
 
+### Installation
 ```swift
 class HomeViewController: UIViewController  {
 
@@ -31,8 +28,14 @@ class HomeViewController: UIViewController  {
         super.viewDidLoad()
         
         self.setKeyboardMover()
+        
     }
 }
+```
+### Settings
+Set the bottom margin of the selected textfield:
+```swift
+static var fieldBottomMargin : CGFloat = 80
 ```
 
 ## Screenshots
